@@ -1,6 +1,6 @@
 import type { NextPage } from 'next';
 import { useContext } from 'react';
-import portfolioContext from '../context/portfolioContext';
+import { portfolioContext } from '../context/portfolioContext';
 
 import styles from './home.module.scss';
 

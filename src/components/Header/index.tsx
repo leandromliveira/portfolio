@@ -2,7 +2,7 @@ import Link from 'next/link';
 import { useContext, useEffect } from 'react';
 import { FaRegLightbulb, FaRegMoon } from 'react-icons/fa';
 
-import portfolioContext from '../../context/portfolioContext';
+import { portfolioContext } from '../../context/portfolioContext';
 
 import styles from './styles.module.scss';
 

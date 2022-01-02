@@ -1,5 +1,3 @@
 import { createContext } from 'react';
 
-const portfolioContext = createContext();
-
-export portfolioContext;
+export const portfolioContext = createContext();
