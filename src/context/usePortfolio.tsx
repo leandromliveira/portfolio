@@ -2,7 +2,7 @@ import { createContext, ReactNode, useContext, useState } from 'react';
 
 interface PortfolioContextData {
   darkMode: boolean;
-  setDarkMode: (darkMode: boolean) => Promise<void>;
+  setDarkMode: (darkMode: boolean) => void;
 }
 
 interface PortfolioProviderProps {
