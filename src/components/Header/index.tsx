@@ -1,13 +1,13 @@
 import Link from 'next/link';
-import { useContext, useEffect } from 'react';
+import { useEffect } from 'react';
 import { FaRegLightbulb, FaRegMoon } from 'react-icons/fa';
 
-import { portfolioContext } from '../../context/portfolioContext';
+import { usePortfolio } from '../../context/usePortfolio';
 
 import styles from './styles.module.scss';
 
 export default function Header() {
-  const { darkMode, setDarkMode } = useContext(portfolioContext);
+  const { darkMode, setDarkMode } = usePortfolio();
   let storage = true;
 
   useEffect(() => {

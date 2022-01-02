@@ -1,10 +1,9 @@
 import type { AppProps } from 'next/app';
 import { SessionProvider as NextAuthProvider } from 'next-auth/react';
-import { useContext, useEffect } from 'react';
 
 import '../styles/global.scss';
 
-import { PortfolioProvider } from '../context/PortfolioProvider';
+import { PortfolioProvider } from '../context/usePortfolio';
 
 import Header from '../components/Header/index';
 import Sidebar from '../components/Sidebar';

@@ -1,11 +1,10 @@
 import type { NextPage } from 'next';
-import { useContext } from 'react';
-import { portfolioContext } from '../context/portfolioContext';
+import { usePortfolio } from '../context/usePortfolio';
 
 import styles from './home.module.scss';
 
 const Home: NextPage = () => {
-  const { darkMode } = useContext(portfolioContext);
+  const { darkMode } = usePortfolio();
   return (
     <>
       <header>
