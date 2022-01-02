@@ -1,0 +1,86 @@
+.sidebarContainer {
+  background-color: var(--gray-900);
+  border-right: 1px solid var(--gray-800);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  text-align: start;
+  width: 250px;
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+  }
+
+  a {
+    color: var(--gray-300);
+    margin-bottom: 10px;
+    padding: 10px 20px;
+    text-decoration: none;
+    cursor: pointer;
+
+    &:hover {
+      color: var(--gray-50);
+      text-decoration: none;
+    }
+  }
+
+  transition: 0.5s ease-in-out;
+
+  &.deactivate {
+    transform: translateX(-180px);
+  }
+}
+
+.icon {
+  display: flex;
+  position: absolute;
+  z-index: 4;
+  left: 1%;
+  width: fit-content;
+  height: 44px;
+  cursor: pointer;
+
+  &.iconActive {
+    .childOne {
+      transform: rotate(45deg);
+      top: 37px;
+    }
+    .childTwo {
+      transform: translate(-200px);
+      visibility: hidden;
+      opacity: 0;
+    }
+    .childThree {
+      transform: rotate(135deg);
+      top: 37px;
+    }
+  }
+}
+
+.hamburger {
+  top: 50%;
+  left: 200px;
+  width: 30px;
+  height: 2px;
+  background: var(--yellow-500);
+  position: absolute;
+  border-radius: 4px;
+  transition: 0.5s ease-in-out;
+
+  &:nth-child(1) {
+    transform: rotate(0);
+  }
+
+  &:nth-child(2) {
+    top: 34px;
+    transform: rotate(0);
+  }
+
+  &:nth-child(3) {
+    top: 46px;
+    transform: rotate(0);
+  }
+}
